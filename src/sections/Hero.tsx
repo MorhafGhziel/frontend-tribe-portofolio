@@ -2,6 +2,7 @@ import memojiImage from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import StarIcon from "@/assets/icons/star.svg";
 
 export const HeroSection = () => {
   return (
@@ -16,6 +17,9 @@ export const HeroSection = () => {
       <div className="size-[820px] hero-ring"></div>
       <div className="size-[1020px] hero-ring"></div>
       <div className="size-[1220px] hero-ring"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <StarIcon className="size-28 text-emerald-300" />
+      </div>
       <div className="container">
         <div className="flex items-center flex-col">
           <Image
