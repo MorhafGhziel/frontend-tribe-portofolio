@@ -3,6 +3,7 @@ import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
+import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 const portfolioProjects = [
   {
@@ -89,6 +90,7 @@ export const ProjectsSection = () => {
                 <a href={project.link}>
                   <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold">
                     View Live Site
+                    <ArrowUpRightIcon />
                   </button>
                 </a>
                 <Image src={project.image} alt={project.title} />
