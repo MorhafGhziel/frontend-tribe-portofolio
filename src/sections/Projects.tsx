@@ -73,38 +73,42 @@ export const ProjectsSection = () => {
                   backgroundImage: `url(${grainImage.src})`,
                 }}
               ></div>
-              <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm bg-clip-text text-transparent">
-                <span> {project.company}</span>
-                <span>&bull;</span>
-                <span> {project.year}</span>
-              </div>
-              <div>
-                <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">
-                  {project.title}
-                </h3>
-                <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                  {project.results.map((result) => (
-                    <li
-                      key={result.title}
-                      className="flex gap-2 text-sm md:text-base text-white/50"
-                    >
-                      <CheckCircleIcon className="size-5 md:size-6" />
-                      <span> {result.title}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a href={project.link}>
-                  <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
-                    Visit Live Site
-                    <ArrowUpRightIcon className="size-4" />
-                  </button>
-                </a>
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className="mt-8 -mb-4 md:-mb-0"
-                />
+              <div className="lg:grid lg:grid-cols-2">
+                <div>
+                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm bg-clip-text text-transparent">
+                    <span> {project.company}</span>
+                    <span>&bull;</span>
+                    <span> {project.year}</span>
+                  </div>
+                  <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">
+                    {project.title}
+                  </h3>
+                  <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
+                  <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                    {project.results.map((result) => (
+                      <li
+                        key={result.title}
+                        className="flex gap-2 text-sm md:text-base text-white/50"
+                      >
+                        <CheckCircleIcon className="size-5 md:size-6" />
+                        <span> {result.title}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a href={project.link}>
+                    <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
+                      Visit Live Site
+                      <ArrowUpRightIcon className="size-4" />
+                    </button>
+                  </a>
+                </div>
+                <div>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="mt-8 -mb-4 md:-mb-0"
+                  />
+                </div>
               </div>
             </div>
           ))}
