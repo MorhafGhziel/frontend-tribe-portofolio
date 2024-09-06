@@ -60,10 +60,11 @@ export const ProjectsSection = () => {
         </p>
         <div>
           {portfolioProjects.map((project) => (
-            <>
-              <div key={project.title}></div>
-              <span> {project.company}</span>
-              <span> {project.year}</span>
+            <div key={project.title}>
+              <div>
+                <span> {project.company}</span>
+                <span> {project.year}</span>
+              </div>
               <div>
                 <h3>{project.title}</h3>
                 <hr />
@@ -77,7 +78,7 @@ export const ProjectsSection = () => {
                 </a>
                 <Image src={project.image} alt={project.title} />
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>
