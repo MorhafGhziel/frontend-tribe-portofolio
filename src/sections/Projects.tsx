@@ -64,7 +64,7 @@ export const ProjectsSection = () => {
           {portfolioProjects.map((project) => (
             <div
               key={project.title}
-              className="bg-gray-800 rounded-3xl relative z-0 after:z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 p-8"
+              className="bg-gray-800 rounded-3xl relative z-0 after:z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8"
             >
               <div className="flex">
                 <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm bg-clip-text text-transparent">
@@ -93,7 +93,11 @@ export const ProjectsSection = () => {
                     <ArrowUpRightIcon clasName="size-4" />
                   </button>
                 </a>
-                <Image src={project.image} alt={project.title} />
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  className="mt-8"
+                />
               </div>
             </div>
           ))}
