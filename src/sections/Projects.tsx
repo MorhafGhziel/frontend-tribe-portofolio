@@ -87,7 +87,9 @@ export const ProjectsSection = () => {
                   ))}
                 </ul>
                 <a href={project.link}>
-                  <button>View Live Site</button>
+                  <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold">
+                    View Live Site
+                  </button>
                 </a>
                 <Image src={project.image} alt={project.title} />
               </div>
