@@ -56,6 +56,15 @@ export const ProjectsSection = () => {
               <span> {project.year}</span>
               <div>
                 <h3>{project.title}</h3>
+                <hr />
+                <ul>
+                  {project.results.map((result) => (
+                    <li key={result.title}>{result.title}</li>
+                  ))}
+                </ul>
+                <a href={project.link}>
+                  <button>View Live Site</button>
+                </a>
               </div>
             </>
           ))}
