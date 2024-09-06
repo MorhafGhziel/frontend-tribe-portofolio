@@ -2,6 +2,7 @@ import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
+import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 
 const portfolioProjects = [
   {
@@ -76,7 +77,10 @@ export const ProjectsSection = () => {
                 <hr className="border-t-2 border-white/5 mt-4" />
                 <ul>
                   {project.results.map((result) => (
-                    <li key={result.title}>{result.title}</li>
+                    <li key={result.title}>
+                      <CheckCircleIcon />
+                      <span> {result.title}</span>
+                    </li>
                   ))}
                 </ul>
                 <a href={project.link}>
