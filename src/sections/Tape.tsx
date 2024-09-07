@@ -16,7 +16,7 @@ const words = [
 export const TapeSection = () => {
   return (
     <div className="py-16">
-      <div>
+      <div className="bg-gradient-to-r from-emerald-300 to-sky-400">
         <div className="flex gap-4">
           {words.map((word) => (
             <div key={word} className="inline-flex gap-4">
