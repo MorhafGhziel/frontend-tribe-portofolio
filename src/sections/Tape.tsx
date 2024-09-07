@@ -24,7 +24,7 @@ export const TapeSection = () => {
                 <span className="text-gray-900 uppercase font-extrabold text-sm">
                   {word}
                 </span>
-                <StartIcon className="size-6 text-gray-900" />
+                <StartIcon className="size-6 text-gray-900 -rotate-12" />
               </div>
             ))}
           </div>
