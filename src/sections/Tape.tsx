@@ -16,12 +16,14 @@ const words = [
 export const TapeSection = () => {
   return (
     <div>
-      {words.map((word) => (
-        <div key={word}>
-          <span>{word}</span>
-          <StartIcon />
-        </div>
-      ))}
+      <div className="flex gap-4">
+        {words.map((word) => (
+          <div key={word}>
+            <span>{word}</span>
+            <StartIcon />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
