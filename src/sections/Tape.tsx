@@ -20,11 +20,11 @@ export const TapeSection = () => {
         <div className="flex">
           <div className="flex flex-none gap-4">
             {words.map((word) => (
-              <div key={word} className="inline-flex gap-4">
+              <div key={word} className="inline-flex gap-4 items-center">
                 <span className="text-gray-900 uppercase font-extrabold text-sm">
                   {word}
                 </span>
-                <StartIcon className="size-6" />
+                <StartIcon className="size-6 text-gray-900" />
               </div>
             ))}
           </div>
