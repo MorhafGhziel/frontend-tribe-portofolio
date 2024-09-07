@@ -17,7 +17,10 @@ export const TapeSection = () => {
   return (
     <div>
       {words.map((word) => (
-        <div key={word}></div>
+        <div key={word}>
+          <span>{word}</span>
+          <StartIcon />
+        </div>
       ))}
     </div>
   );
