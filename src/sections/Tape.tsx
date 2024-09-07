@@ -1,3 +1,5 @@
+import StartIcon from "@/assets/icons/star.svg";
+
 const words = [
   "Perfomant",
   "Accessible",
