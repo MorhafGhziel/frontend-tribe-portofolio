@@ -16,7 +16,7 @@ const words = [
 export const TapeSection = () => {
   return (
     <div className="py-16">
-      <div className="bg-gradient-to-r from-emerald-300 to-sky-400">
+      <div className="bg-gradient-to-r from-emerald-300 to-sky-400 overflow-x-clip">
         <div className="flex">
           <div className="flex flex-none gap-4">
             {words.map((word) => (
