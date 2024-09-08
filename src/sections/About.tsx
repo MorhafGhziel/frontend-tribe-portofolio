@@ -10,6 +10,8 @@ import ReactIcon from "@/assets/icons/react.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import TechIcon from "@/components/TechIcon";
+import mapImage from "@/assets/images/map copy.png";
+import smileMemoji from "@/assets/images/memoji-smile.png";
 
 const toolboxItems = [
   {
@@ -38,9 +40,40 @@ const toolboxItems = [
   },
 ];
 
+const hobbies = [
+  {
+    title: "painting",
+    emoji: "🎨",
+  },
+  {
+    title: "Hiking",
+    emoji: "🥾",
+  },
+  {
+    title: "Gaming",
+    emoji: "🎮",
+  },
+  {
+    title: "painting",
+    emoji: "🎨",
+  },
+  {
+    title: "Swimming",
+    emoji: "🏊",
+  },
+  {
+    title: "Fitness",
+    emoji: "🏋️‍♀️",
+  },
+  {
+    title: "Reading",
+    emoji: "📚",
+  },
+];
+
 export const AboutSection = () => {
   return (
-    <div className="pb-96">
+    <div className="py-16">
       <SectionHeader
         title="About Me"
         eyebrow="A Glimpse Into My World"
@@ -72,6 +105,23 @@ export const AboutSection = () => {
               </div>
             ))}
           </div>
+        </Card>
+        <Card>
+          <div>
+            <StarIcon />
+            <h3>Beyond the Code</h3>
+            <p>Explore my interests and hobbies beyond the digital realm.</p>
+          </div>
+          {hobbies.map((hobbie) => (
+            <div key={hobbie.title}>
+              <span>{hobbie.title}</span>
+              <span>{hobbie.emoji}</span>
+            </div>
+          ))}
+        </Card>
+        <Card>
+          <Image src={mapImage} alt="Map Image" />
+          <Image src={smileMemoji} alt="Smile memoji" />
         </Card>
       </div>
     </div>
