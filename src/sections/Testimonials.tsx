@@ -51,7 +51,7 @@ export const TestimonialsSection = () => {
         />
         <div>
           {testimonials.map((testimonial) => (
-            <div key={testimonial.name}>
+            <div key={testimonial.name} className="bg-gray-800 rounded-3xl p-6">
               <Image src={testimonial.avatar} alt={testimonial.name} />
               <div>{testimonial.name}</div>
               <div>{testimonial.position}</div>
