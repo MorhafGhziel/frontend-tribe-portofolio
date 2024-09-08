@@ -63,11 +63,13 @@ export const TestimonialsSection = () => {
                   />
                 </div>
                 <div>
-                  <div>{testimonial.name}</div>
-                  <div>{testimonial.position}</div>
+                  <div className="font-semibold">{testimonial.name}</div>
+                  <div className="text-sm text-white/40">
+                    {testimonial.position}
+                  </div>
                 </div>
               </div>
-              <div>{testimonial.text}</div>
+              <p className="mt-4 text-sm">{testimonial.text}</p>
             </Card>
           ))}
         </div>
