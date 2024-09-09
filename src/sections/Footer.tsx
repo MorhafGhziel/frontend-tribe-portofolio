@@ -1,3 +1,5 @@
+import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
+
 const footerLinks = [
   {
     title: "Twitter",
@@ -23,6 +25,7 @@ export const Footer = () => {
             {footerLinks.map((link) => (
               <a href="#" key={link.title}>
                 <span>{link.title}</span>
+                <ArrowUpRight />
               </a>
             ))}
           </nav>
