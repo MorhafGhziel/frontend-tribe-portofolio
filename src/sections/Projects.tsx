@@ -7,18 +7,18 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 
 const portfolioProjects = [
-  {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
+  // {
+  //   company: "Acme Corp",
+  //   year: "2022",
+  //   title: "Dark Saas Landing Page",
+  //   results: [
+  //     { title: "Enhanced user experience by 40%" },
+  //     { title: "Improved site speed by 50%" },
+  //     { title: "Increased mobile traffic by 35%" },
+  //   ],
+  //   link: "https://youtu.be/4k7IdSLxh6w",
+  //   image: darkSaasLandingPage,
+  // },
   {
     company: "Innovative Co",
     year: "2021",
@@ -28,7 +28,7 @@ const portfolioProjects = [
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "https://saas-nextjs.netlify.app/",
     image: lightSaasLandingPage,
   },
   {
@@ -40,8 +40,20 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "https://ai-startup-landing-page.netlify.app/",
     image: aiStartupLandingPage,
+  },
+  {
+    company: "Acme Corp",
+    year: "2022",
+    title: "Dark Saas Landing Page",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://youtu.be/4k7IdSLxh6w",
+    image: darkSaasLandingPage,
   },
 ];
 
