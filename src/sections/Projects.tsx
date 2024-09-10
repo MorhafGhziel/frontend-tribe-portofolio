@@ -31,31 +31,13 @@ const portfolioProjects = [
     link: "https://frontend-ai-startup-landing-page.vercel.app/",
     image: aiStartupLandingPage,
   },
-  // {
-  //   company: "Acme Corp",
-  //   year: "2022",
-  //   title: "Dark Saas Landing Page",
-  //   results: [
-  //     { title: "Enhanced user experience by 40%" },
-  //     { title: "Improved site speed by 50%" },
-  //     { title: "Increased mobile traffic by 35%" },
-  //   ],
-  //   link: "#",
-  //   image: darkSaasLandingPage,
-  // },
   {
     company: "PromptShare AI",
     year: "2024",
     title: "AI Prompt Sharing Platform",
     results: [
       { title: "Increased community engagement by 50%" },
-      {
-        title: (
-          <div className="max-w-full whitespace-nowrap">
-            Streamlined prompt-sharing process by 30%
-          </div>
-        ),
-      },
+      { title: "Streamlined prompt-sharing process by 30%" },
       { title: "Expanded user base by 40%" },
     ],
     link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
@@ -109,17 +91,19 @@ export const ProjectsSection = () => {
                     {project.results.map((result) => (
                       <li
                         key={result.title}
-                        className="flex gap-2 text-sm md:text-base text-white/50"
+                        className="flex gap-2 text-sm md:text-base text-white/50 items-center max-w-full whitespace-nowrap overflow-hidden text-ellipsis"
                       >
-                        <CheckCircleIcon className="size-5 md:size-6" />
-                        <span> {result.title}</span>
+                        <CheckCircleIcon className="w-5 h-5 md:w-6 md:h-6" />
+                        <span className="overflow-hidden text-ellipsis">
+                          {result.title}
+                        </span>
                       </li>
                     ))}
                   </ul>
                   <a href={project.link} target="_blank">
                     <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
                       Visit Live Site
-                      <ArrowUpRightIcon className="size-4" />
+                      <ArrowUpRightIcon className="w-4 h-4" />
                     </button>
                   </a>
                 </div>
