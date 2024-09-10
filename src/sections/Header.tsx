@@ -22,7 +22,11 @@ export const Header = () => {
           Projects
         </a>
 
-        <a href="#" className="nav-item">
+        <a
+          href="#"
+          className="nav-item"
+          onClick={() => handleScrollToSection("about")}
+        >
           About
         </a>
         <a
