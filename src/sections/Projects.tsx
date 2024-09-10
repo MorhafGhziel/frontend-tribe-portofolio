@@ -16,7 +16,7 @@ const portfolioProjects = [
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://saas-nextjs.netlify.app/",
+    link: "https://saa-s-nextjs-project.vercel.app/",
     image: lightSaasLandingPage,
   },
   {
