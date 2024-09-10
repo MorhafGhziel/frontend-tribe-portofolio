@@ -22,12 +22,14 @@ export const ContactSection = () => {
                 discuss how I can help you achieve your goals.
               </p>
             </div>
-            <div className="mt-8 md:mt-0">
-              <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
-                <span className="font-semibold">Contact Me</span>
-                <ArrowRightIcon className="size-4" />
-              </button>
-            </div>
+            <a href="mailto:ghzielmorhaf@gmail.com">
+              <div className="mt-8 md:mt-0">
+                <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 cursor-pointer">
+                  <span className="font-semibold">Contact Me</span>
+                  <ArrowRightIcon className="size-4" />
+                </button>
+              </div>
+            </a>
           </div>
         </div>
       </div>

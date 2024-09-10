@@ -40,7 +40,7 @@ const portfolioProjects = [
   //     { title: "Improved site speed by 50%" },
   //     { title: "Increased mobile traffic by 35%" },
   //   ],
-  //   link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
+  //   link: "#",
   //   image: darkSaasLandingPage,
   // },
   {
@@ -110,7 +110,7 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a href={project.link} target="_blank">
                     <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
                       Visit Live Site
                       <ArrowUpRightIcon className="size-4" />
