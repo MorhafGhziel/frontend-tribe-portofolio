@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import bookImage from "@/assets/images/book-cover.png";
@@ -12,6 +14,7 @@ import mapImage from "@/assets/images/map copy.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import CardHeader from "@/components/CardHeader";
 import ToolboxItems from "@/components/ToolboxItems";
+import { motion } from "framer-motion";
 
 const toolboxItems = [
   {
@@ -134,7 +137,7 @@ export const AboutSection = () => {
               />
               <div className="relative flex-1">
                 {hobbies.map((hobby) => (
-                  <div
+                  <motion.div
                     key={hobby.title}
                     className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                     style={{
@@ -146,7 +149,7 @@ export const AboutSection = () => {
                       {hobby.title}
                     </span>
                     <span>{hobby.emoji}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </Card>
