@@ -3,11 +3,11 @@ import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 const footerLinks = [
   {
     title: "Twitter",
-    href: "#",
+    href: "https://x.com/MorhafGhziel",
   },
   {
     title: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/4uee_m/?next=%2F",
   },
   {
     title: "LinkedIn",
@@ -27,7 +27,7 @@ export const Footer = () => {
               <a
                 href={link.href}
                 key={link.title}
-                className="inline-flex items-center gap-1.5"
+                className="inline-flex items-center gap-1.5 text-white/60 hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
