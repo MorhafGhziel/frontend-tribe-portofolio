@@ -1,3 +1,5 @@
+"use client";
+
 import memojiImage from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
@@ -5,8 +7,25 @@ import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import HeroOrbit from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
+import Link from "next/link";
 
 export const HeroSection = () => {
+  const handleScrollToSection = (
+    sectionId: string,
+    event: React.MouseEvent<HTMLElement>
+  ) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const sectionTop = section.offsetTop;
+      const headerOffset = 80;
+
+      window.scrollTo({
+        top: sectionTop - headerOffset,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div
       className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
@@ -131,14 +150,25 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex gap-2 border border-white/15 items-center rounded-xl px-6 h-12">
-            <span className="font-semibold ">Explore My Work</span>
+          <button className=" relative inline-flex gap-2 border border-white/15 items-center rounded-xl px-6 h-12">
+            <span
+              className="font-semibold"
+              onClick={(e) => handleScrollToSection("projects", e)}
+            >
+              Explore My Work
+            </span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span>👋</span>
-            <span className="font-bold">Let&#39;s Connect</span>
-          </button>
+          <Link
+            href="https://www.linkedin.com/in/morhaf-ghziel-a720a72b9/"
+            className="relative"
+            target="_blank"
+          >
+            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+              <span>👋</span>
+              <span className="font-bold">Let&#39;s Connect</span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
