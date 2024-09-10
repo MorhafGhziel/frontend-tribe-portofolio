@@ -1,4 +1,4 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
+import promptShareImage from "@/assets/images/promptShareImage.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
@@ -7,18 +7,6 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 
 const portfolioProjects = [
-  // {
-  //   company: "Acme Corp",
-  //   year: "2022",
-  //   title: "Dark Saas Landing Page",
-  //   results: [
-  //     { title: "Enhanced user experience by 40%" },
-  //     { title: "Improved site speed by 50%" },
-  //     { title: "Increased mobile traffic by 35%" },
-  //   ],
-  //   link: "https://youtu.be/4k7IdSLxh6w",
-  //   image: darkSaasLandingPage,
-  // },
   {
     company: "Innovative Co",
     year: "2021",
@@ -40,20 +28,32 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://ai-startup-landing-page.netlify.app/",
+    link: "https://frontend-ai-startup-landing-page.vercel.app/",
     image: aiStartupLandingPage,
   },
+  // {
+  //   company: "Acme Corp",
+  //   year: "2022",
+  //   title: "Dark Saas Landing Page",
+  //   results: [
+  //     { title: "Enhanced user experience by 40%" },
+  //     { title: "Improved site speed by 50%" },
+  //     { title: "Increased mobile traffic by 35%" },
+  //   ],
+  //   link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
+  //   image: darkSaasLandingPage,
+  // },
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "PromptShare AI",
+    year: "2024",
+    title: "AI Prompt Sharing Platform",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Increased community engagement by 50%" },
+      { title: "Streamlined prompt-sharing process" },
+      { title: "Expanded user base by 40%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
+    image: promptShareImage,
   },
 ];
 
