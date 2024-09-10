@@ -116,7 +116,7 @@ export const AboutSection = () => {
               <ToolboxItems
                 items={toolboxItems}
                 className=""
-                itemsWrapperClassName="animate-move-left"
+                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
               />
               <ToolboxItems
                 items={toolboxItems}
