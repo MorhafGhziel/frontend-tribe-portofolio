@@ -49,7 +49,13 @@ const portfolioProjects = [
     title: "AI Prompt Sharing Platform",
     results: [
       { title: "Increased community engagement by 50%" },
-      { title: "Streamlined prompt-sharing process by 30%" },
+      {
+        title: (
+          <div className="max-w-full whitespace-nowrap">
+            Streamlined prompt-sharing process by 30%
+          </div>
+        ),
+      },
       { title: "Expanded user base by 40%" },
     ],
     link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
