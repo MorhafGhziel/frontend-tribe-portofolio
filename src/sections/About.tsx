@@ -113,7 +113,11 @@ export const AboutSection = () => {
                 digital experiences."
                 className=""
               />
-              <ToolboxItems items={toolboxItems} className="" />
+              <ToolboxItems
+                items={toolboxItems}
+                className=""
+                itemsWrapperClassName="animate-move-left"
+              />
               <ToolboxItems
                 items={toolboxItems}
                 className="mt-6 "
