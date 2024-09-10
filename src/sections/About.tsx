@@ -8,6 +8,8 @@ import JavascriptIcon from "@/assets/icons/square-js.svg";
 import HTMLIcon from "@/assets/icons/html5.svg";
 import CssIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
+import nextIcon from "@/assets/icons/nextjs-icon-svgrepo-com.svg";
+import framerMotion from "@/assets/icons/framer-motion.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import mapImage from "@/assets/images/map copy.png";
@@ -41,6 +43,14 @@ const toolboxItems = [
   {
     title: "Github",
     iconType: GithubIcon,
+  },
+  {
+    title: "NextJs",
+    iconType: nextIcon,
+  },
+  {
+    title: "Motion",
+    iconType: framerMotion,
   },
 ];
 
