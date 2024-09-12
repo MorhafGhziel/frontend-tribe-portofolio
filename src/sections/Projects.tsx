@@ -5,6 +5,7 @@ import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import SaasfiyImage from "@/assets/images/SaasifyImage.png";
 
 const portfolioProjects = [
   {
@@ -43,6 +44,15 @@ const portfolioProjects = [
     link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
     image: promptShareImage,
   },
+  {
+    company: "Fizzi Drinks Shop",
+    year: "2024",
+    title: "Refreshing Drinks Online Shop",
+    results: [],
+    link: "https://fizzi-drinks-shop.vercel.app/",
+    image: SaasfiyImage, // Replace with actual image when available
+    status: "In progress", // Optional status field
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -67,7 +77,7 @@ export const ProjectsSection = () => {
               key={project.title}
               className="bg-gray-800 rounded-3xl z-0 after:z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events-none sticky"
               style={{
-                top: `calc(64px + ${projectIndex * 40}px`,
+                top: `calc(64px + ${projectIndex * 40}px)`,
               }}
             >
               <div
@@ -79,26 +89,32 @@ export const ProjectsSection = () => {
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm bg-clip-text text-transparent">
-                    <span> {project.company}</span>
+                    <span>{project.company}</span>
                     <span>&bull;</span>
-                    <span> {project.year}</span>
+                    <span>{project.year}</span>
                   </div>
                   <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">
                     {project.title}
                   </h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                    {project.results.map((result) => (
-                      <li
-                        key={result.title}
-                        className="flex gap-2 text-sm md:text-base text-white/50 items-center max-w-full whitespace-nowrap overflow-hidden text-ellipsis"
-                      >
-                        <CheckCircleIcon className="w-5 h-5 md:w-6 md:h-6" />
-                        <span className="overflow-hidden text-ellipsis">
-                          {result.title}
-                        </span>
+                    {project.results.length > 0 ? (
+                      project.results.map((result) => (
+                        <li
+                          key={result.title}
+                          className="flex gap-2 text-sm md:text-base text-white/50 items-center max-w-full whitespace-nowrap overflow-hidden text-ellipsis"
+                        >
+                          <CheckCircleIcon className="w-5 h-5 md:w-6 md:h-6" />
+                          <span className="overflow-hidden text-ellipsis">
+                            {result.title}
+                          </span>
+                        </li>
+                      ))
+                    ) : (
+                      <li className="text-white/50 text-sm md:text-base">
+                        Project not yet completed
                       </li>
-                    ))}
+                    )}
                   </ul>
                   <a href={project.link} target="_blank">
                     <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
