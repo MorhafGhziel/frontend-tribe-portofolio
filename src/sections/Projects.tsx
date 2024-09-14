@@ -44,15 +44,6 @@ const portfolioProjects = [
     link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
     image: promptShareImage,
   },
-  {
-    company: "Fizzi Drinks Shop",
-    year: "2024",
-    title: "Refreshing Drinks Online Shop",
-    results: [],
-    link: "https://fizzi-drinks-shop.vercel.app/",
-    image: SaasfiyImage, // Replace with actual image when available
-    status: "In progress", // Optional status field
-  },
 ];
 
 export const ProjectsSection = () => {
