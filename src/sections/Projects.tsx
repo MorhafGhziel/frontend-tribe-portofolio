@@ -5,7 +5,7 @@ import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
-import SaasfiyImage from "@/assets/images/SaasifyImage.png";
+import iphoneLandingImage from "@/assets/images/iphoneLandingImage.png";
 
 const portfolioProjects = [
   {
@@ -43,6 +43,15 @@ const portfolioProjects = [
     ],
     link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
     image: promptShareImage,
+  },
+  {
+    company: "iPhone 15 Pro",
+    year: "2024",
+    title: "iPhone 15 Landing Page",
+    results: [],
+    link: "https://iphone-blush-chi.vercel.app/",
+    image: iphoneLandingImage, // Replace with actual image when available
+    status: "In progress", // Optional status field
   },
 ];
 
