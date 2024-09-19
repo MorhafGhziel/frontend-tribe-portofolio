@@ -47,7 +47,7 @@ const portfolioProjects = [
   {
     company: "iPhone 15 Pro",
     year: "2024",
-    title: "iPhone 15 Landing Page",
+    title: "iPhone 15 Shopify Page",
     results: [],
     link: "https://iphone-blush-chi.vercel.app/",
     image: iphoneLandingImage, // Replace with actual image when available
