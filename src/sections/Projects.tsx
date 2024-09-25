@@ -6,6 +6,7 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import iphoneLandingImage from "@/assets/images/iphoneLandingImage.png";
+import NftBg from "@/assets/images/NftImage.png";
 
 const portfolioProjects = [
   {
@@ -45,13 +46,22 @@ const portfolioProjects = [
     image: promptShareImage,
   },
   {
+    company: "Anima",
+    year: "2024",
+    title: "NFT Marketplace Homepage",
+    results: [],
+    link: "https://nft-marketplace-gilt-kappa.vercel.app/",
+    image: NftBg,
+    status: "In progress",
+  },
+  {
     company: "iPhone 15 Pro",
     year: "2024",
     title: "iPhone 15 Shopify Page",
     results: [],
     link: "https://iphone-blush-chi.vercel.app/",
-    image: iphoneLandingImage, // Replace with actual image when available
-    status: "In progress", // Optional status field
+    image: iphoneLandingImage,
+    status: "In progress",
   },
 ];
 
