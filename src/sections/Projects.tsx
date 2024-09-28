@@ -49,7 +49,7 @@ const portfolioProjects = [
     company: "Anima",
     year: "2024",
     title: "NFT Marketplace Homepage",
-    results: [{ title: "" }, { title: "" }, { title: "" }],
+    results: [],
     link: "https://nft-marketplace-gilt-kappa.vercel.app/",
     image: NftBg,
     status: "In progress",
