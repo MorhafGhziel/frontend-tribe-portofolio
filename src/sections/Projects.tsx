@@ -45,24 +45,6 @@ const portfolioProjects = [
     link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
     image: promptShareImage,
   },
-  {
-    company: "Anima",
-    year: "2024",
-    title: "NFT Marketplace Homepage",
-    results: [],
-    link: "https://nft-marketplace-gilt-kappa.vercel.app/",
-    image: NftBg,
-    status: "In progress",
-  },
-  {
-    company: "iPhone 15 Pro",
-    year: "2024",
-    title: "iPhone 15 Shopify Page",
-    results: [],
-    link: "https://iphone-blush-chi.vercel.app/",
-    image: iphoneLandingImage,
-    status: "In progress",
-  },
 ];
 
 export const ProjectsSection = () => {
