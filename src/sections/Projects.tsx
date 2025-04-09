@@ -5,21 +5,34 @@ import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
-import iphoneLandingImage from "@/assets/images/iphoneLandingImage.png";
-import NftBg from "@/assets/images/NftImage.png";
+import carHubImage from "@/assets/images/CarHub.png";
 
 const portfolioProjects = [
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Car Hub",
+    year: "2025",
+    title: "Car Showcase Platform",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      {
+        title: "Built modern car catalog with search and filter functionality",
+      },
+      { title: "Implemented responsive design for all screen sizes" },
+      { title: "Integrated car specifications and rental information system" },
     ],
-    link: "https://saa-s-nextjs-project.vercel.app/",
-    image: lightSaasLandingPage,
+    link: "https://car-showcase-seven-tau.vercel.app/",
+    image: carHubImage,
+  },
+  {
+    company: "PromptShare AI",
+    year: "2024",
+    title: "AI Prompt Sharing Platform",
+    results: [
+      { title: "Increased community engagement by 50%" },
+      { title: "Streamlined prompt-sharing process by 30%" },
+      { title: "Expanded user base by 40%" },
+    ],
+    link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
+    image: promptShareImage,
   },
   {
     company: "Quantum Dynamics",
@@ -34,16 +47,16 @@ const portfolioProjects = [
     image: aiStartupLandingPage,
   },
   {
-    company: "PromptShare AI",
-    year: "2024",
-    title: "AI Prompt Sharing Platform",
+    company: "Innovative Co",
+    year: "2021",
+    title: "Light Saas Landing Page",
     results: [
-      { title: "Increased community engagement by 50%" },
-      { title: "Streamlined prompt-sharing process by 30%" },
-      { title: "Expanded user base by 40%" },
+      { title: "Boosted sales by 20%" },
+      { title: "Expanded customer reach by 35%" },
+      { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://project-next-14-ai-prompt-sharing-self.vercel.app/",
-    image: promptShareImage,
+    link: "https://saa-s-nextjs-project.vercel.app/",
+    image: lightSaasLandingPage,
   },
 ];
 
