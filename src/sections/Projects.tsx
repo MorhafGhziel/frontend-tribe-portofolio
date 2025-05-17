@@ -6,8 +6,23 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import carHubImage from "@/assets/images/CarHub.png";
+import sociallyImage from "@/assets/images/Socially.png";
 
 const portfolioProjects = [
+  {
+    company: "Socially",
+    year: "2024",
+    title: "Connect & Share: A Next-Gen Social Network",
+    results: [
+      {
+        title: "Developed real-time chat and messaging system",
+      },
+      { title: "Implemented user authentication and profile management" },
+      { title: "Created interactive post sharing and engagement features" },
+    ],
+    link: "https://socially-platform.vercel.app/",
+    image: sociallyImage,
+  },
   {
     company: "Car Hub",
     year: "2025",
