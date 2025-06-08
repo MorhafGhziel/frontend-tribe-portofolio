@@ -20,7 +20,7 @@ const portfolioProjects = [
       { title: "Implemented user authentication and profile management" },
       { title: "Created interactive post sharing and engagement features" },
     ],
-    link: "https://socially-platform.vercel.app/",
+    link: "https://socially-ebon.vercel.app/",
     image: sociallyImage,
   },
   {
