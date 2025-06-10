@@ -7,6 +7,7 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import carHubImage from "@/assets/images/CarHub.png";
 import sociallyImage from "@/assets/images/Socially.png";
+import productDashboardImage from "@/assets/images/Admin-Dashboard.png";
 
 const portfolioProjects = [
   {
@@ -22,6 +23,22 @@ const portfolioProjects = [
     ],
     link: "https://socially-ebon.vercel.app/",
     image: sociallyImage,
+  },
+  {
+    company: "Product Dashboard",
+    year: "2024",
+    title: "Admin Dashboard: Smart Product Management Suite",
+    results: [
+      {
+        title: "Built intuitive product upload and management interface",
+      },
+      {
+        title: "Implemented dynamic product filtering and search functionality",
+      },
+      { title: "Created responsive dashboard with real-time updates" },
+    ],
+    link: "https://product-upload-dashboard.vercel.app/products",
+    image: productDashboardImage,
   },
   {
     company: "Car Hub",
