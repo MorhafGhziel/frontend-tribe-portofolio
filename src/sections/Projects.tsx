@@ -8,6 +8,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import carHubImage from "@/assets/images/CarHub.png";
 import sociallyImage from "@/assets/images/Socially.png";
 import productDashboardImage from "@/assets/images/Admin-Dashboard.png";
+import chatAssistantImage from "@/assets/images/Ai-ChatBot.png";
 
 const portfolioProjects = [
   {
@@ -39,6 +40,20 @@ const portfolioProjects = [
     ],
     link: "https://product-upload-dashboard.vercel.app/products",
     image: productDashboardImage,
+  },
+  {
+    company: "AI Assistant",
+    year: "2024",
+    title: "Modern AI Chat Interface with Voice",
+    results: [
+      {
+        title: "Integrated speech recognition for voice commands",
+      },
+      { title: "Built sleek, responsive chat UI with modern design" },
+      { title: "Implemented dynamic dark/light theme switching" },
+    ],
+    link: "https://chat-interface-challenge.vercel.app/",
+    image: chatAssistantImage,
   },
   {
     company: "Car Hub",
