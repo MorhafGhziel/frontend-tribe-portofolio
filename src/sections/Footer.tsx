@@ -2,8 +2,8 @@ import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 
 const footerLinks = [
   {
-    title: "Twitter",
-    href: "https://x.com/MorhafGhziel",
+    title: "X",
+    href: "https://x.com/MorhafGhz",
   },
   {
     title: "Instagram",
